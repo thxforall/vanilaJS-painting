@@ -7,14 +7,15 @@ const ctx = canvas.getContext("2d");
 canvas.width = 800;
 canvas.height = 800;
 
-ctx.rect(50, 50, 100, 100);
-ctx.rect(150, 150, 100, 100);
-ctx.rect(250, 250, 100, 100);
+ctx.fillRect(220 + 20, 200, 15, 100);
+ctx.fillRect(380 + 20, 200, 15, 100);
+ctx.fillRect(275 + 20, 200, 60, 200);
+
+ctx.arc(302 + 20, 150, 50, 0, 2 * Math.PI);
 ctx.fill();
 
-// new path
 ctx.beginPath();
-ctx.rect(350, 350, 100, 100);
-ctx.rect(450, 450, 100, 100);
-ctx.fillStyle = "red";
+ctx.fillStyle = "white";
+ctx.arc(280 + 20, 150, 10, Math.PI, 2 * Math.PI);
+ctx.arc(320 + 20, 150, 10, Math.PI, 2 * Math.PI);
 ctx.fill();
